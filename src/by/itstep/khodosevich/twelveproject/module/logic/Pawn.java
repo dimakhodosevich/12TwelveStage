@@ -6,8 +6,12 @@ public class Pawn {
             return "NO";
         }
 
-        if(x2<1 || x2>8 || y2<1 || y2>8){
+        if (x2 < 1 || x2 > 8 || y2 < 1 || y2 > 8) {
             return "NO";
+        }
+
+        if (x1 == 7) {
+            return ((x1 - x2 <= 2) && (x1 - x2 > 0) && (y1 == y2)) ? "YES" : "NO";
         }
 
         return ((x1 - 1 == x2) && (y1 == y2)) ? "YES" : "NO";

@@ -30,7 +30,7 @@ public class ControllerChess {
         Printer.print("y = ");
         int y1 = scanner.nextInt();
 
-        if(!ChessBoard.isChessBoardCell(x1,y1)){
+        if (!ChessBoard.isChessBoardCell(x1, y1)) {
             Printer.print("Incorrect input!!!");
             return;
         }
@@ -41,10 +41,10 @@ public class ControllerChess {
         Printer.print("y = ");
         int y2 = scanner.nextInt();
 
-        if(!ChessBoard.isChessBoardCell(x2,y2)){
+        if (!ChessBoard.isChessBoardCell(x2, y2)) {
             Printer.print("Incorrect input!!!");
             return;
-        } else{
+        } else {
             message = Figure.moveChessFigure(x1, y1, x2, y2, typeOfFigure);
             message = String.format("\nIs valid step? Answer: %s.", message);
             Printer.print(message);

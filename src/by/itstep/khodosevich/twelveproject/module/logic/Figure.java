@@ -53,7 +53,7 @@ public class Figure {
             case 6:
                 result = Pawn.isValidPawnStep(x1, y1, x2, y2);
                 break;
-            }
+        }
         return result;
     }
 }
